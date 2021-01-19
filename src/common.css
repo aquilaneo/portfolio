@@ -1,0 +1,14 @@
+.space {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+    width: 50vw;
+}
