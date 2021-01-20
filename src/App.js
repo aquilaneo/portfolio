@@ -1,4 +1,7 @@
 import "./common.css"
+import Icon from "./img/Icon.png"
+import GitHubLogo from "./img/GitHub_Logo.png"
+import QiitaLogo from "./img/Qiita_Logo.png"
 
 function App () {
 	return (
@@ -15,14 +18,40 @@ function App () {
 			<div className={"space"}>
 				<div className={"center"}>
 					<h2 className={"subtitle"}>About me</h2>
-					<div>
-						<div>Takumi</div>
-						<div>
-							首都圏在住の大学院生です。趣味は離島めぐりやゲームです。
-							コロナ禍で旅行に行けなくなり寂しいですが、コロナ明け後は島内に無料温泉が多数あるという伊豆諸島の式根島に行ってみたいと思っています。
-							好きなゲームはFinal Fantasyシリーズで、「こんなすごいゲームを創ってみたい！」という想いでプログラミングを勉強し始めるきっかけになったゲームでもあります。
-						</div>
-					</div>
+					<table>
+						<tbody>
+						<tr>
+							<td>
+								<img src={Icon} style={{height: "100%", padding: "2rem"}} alt={"アイコン"}/>
+							</td>
+							<td>
+								<div id={"about-me"}>
+									<h3>Takumi</h3>
+									<div>
+										<p> 首都圏在住の大学院生です。趣味は離島めぐりやゲームです。</p>
+										<p>
+											コロナ禍で旅行に行けなくなり寂しくなりましたが、コロナ明け後は日本一の秘境とも言われる伊豆諸島の青ヶ島に行きたいと思っています。
+											好きなゲームはFinal
+											Fantasyシリーズで、「こんなすごいゲームを創ってみたい！」という想いでプログラミングを勉強し始めるきっかけになったゲームでもあります。
+										</p>
+										<p>
+											そんなことからIT/プログラミングとの出会いはゲーム開発から始まり、デスクトップアプリ開発なども体験しつつ現在はWebフロントエンド系技術に触れることが多いです。
+											大学で所属している団体やアルバイトでは組み込み開発やプログラミング教育に関わっていたりもします。
+										</p>
+									</div>
+									<div style={{textAlign: "center"}}>
+										<a href={"https://github.com/aquilaneo"}>
+											<img src={GitHubLogo} alt={"GitHub"} className={"logo"}/>
+										</a>
+										<a href={"https://qiita.com/aquilaneo"}>
+											<img src={QiitaLogo} alt={"Qiita"} className={"logo"}/>
+										</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 

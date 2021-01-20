@@ -12,3 +12,16 @@
     margin: 0 auto;
     width: 50vw;
 }
+
+.icon {
+    height: 100%;
+}
+
+.logo {
+    height: 2rem;
+    margin: 0.8rem 2rem;
+}
+
+p {
+    margin: 4px 0;
+}
