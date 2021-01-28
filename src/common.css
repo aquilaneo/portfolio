@@ -4,6 +4,17 @@ body {
     font-family: 'Kosugi Maru', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding-left: 20px;
+    line-height: 1.6em;
+    background: url("img/Check.png") left 0px top 3px no-repeat;
+    background-size: 16px auto;
+}
+
 .space {
     min-height: 100vh;
     display: flex;
@@ -17,6 +28,7 @@ body {
 
 .subtitle {
     text-align: center;
+    margin: 1rem 0;
 }
 
 .logo {
@@ -47,7 +59,10 @@ p {
 }
 
 .panel {
+    height: 100%;
+    padding: 0.4rem 1rem 0 0;
     border: solid thin black;
+    border-radius: 5px;
     box-sizing: border-box;
-    background-color: cornflowerblue;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
