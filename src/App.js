@@ -200,7 +200,9 @@ const App = () => {
 									setSelectedWork (works["researches"][0]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["researches"][0].name}</h5>
 										<div>{works["researches"][0].languages}</div>
@@ -213,7 +215,9 @@ const App = () => {
 									setSelectedWork (works["researches"][1]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["researches"][1].name}</h5>
 										<div>{works["researches"][1].languages}</div>
@@ -226,7 +230,9 @@ const App = () => {
 									setSelectedWork (works["researches"][2]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["researches"][2].name}</h5>
 										<div>{works["researches"][2].languages}</div>
@@ -243,7 +249,9 @@ const App = () => {
 									setSelectedWork (works["project"][0]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["project"][0].name}</h5>
 										<div>{works["project"][0].languages}</div>
@@ -256,7 +264,9 @@ const App = () => {
 									setSelectedWork (works["project"][1]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["project"][1].name}</h5>
 										<div>{works["project"][1].languages}</div>
@@ -269,7 +279,9 @@ const App = () => {
 									setSelectedWork (works["project"][2]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["project"][2].name}</h5>
 										<div>{works["project"][2].languages}</div>
@@ -286,7 +298,9 @@ const App = () => {
 									setSelectedWork (works["private"][0]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["private"][0].name}</h5>
 										<div>{works["private"][0].languages}</div>
@@ -299,7 +313,9 @@ const App = () => {
 									setSelectedWork (works["private"][1]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["private"][1].name}</h5>
 										<div>{works["private"][1].languages}</div>
@@ -312,7 +328,9 @@ const App = () => {
 									setSelectedWork (works["private"][2]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["private"][2].name}</h5>
 										<div>{works["private"][2].languages}</div>
@@ -327,7 +345,9 @@ const App = () => {
 									setSelectedWork (works["private"][3]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["private"][3].name}</h5>
 										<div>{works["private"][3].languages}</div>
@@ -340,7 +360,9 @@ const App = () => {
 									setSelectedWork (works["private"][4]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["private"][4].name}</h5>
 										<div>{works["private"][4].languages}</div>
@@ -353,7 +375,9 @@ const App = () => {
 									setSelectedWork (works["private"][5]);
 									setIsWorkDetailVisible (true);
 								}}>
-									<div className={"work-image"}></div>
+									<div className={"work-image-container"}>
+										<div className={"work-image"}></div>
+									</div>
 									<div className={"work-title"}>
 										<h5>{works["private"][5].name}</h5>
 										<div>{works["private"][5].languages}</div>
@@ -409,7 +433,9 @@ const WorkDetail = (props) => {
 				×
 			</div>
 			<div className={"work-detail-contents"}>
-				<div className={"work-detail-image"}></div>
+				<div className={"work-detail-image-container"}>
+					<div className={"work-detail-image"}></div>
+				</div>
 				<div className={"work-detail-text"}>
 					<h4>{props.work.name}</h4>
 					<div className={"work-detail-text-paragraph"}>

@@ -99,11 +99,22 @@ p {
     cursor: pointer;
 }
 
-.work-image {
+.work-image-container {
+    position: relative;
     width: 100%;
-    height: 10rem;
+}
+
+.work-image-container:before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.work-image {
     border-radius: 4px 4px 0 0;
     background-color: green;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .work-title {
@@ -154,11 +165,22 @@ p {
     text-align: center;
 }
 
-.work-detail-image {
+.work-detail-image-container {
+    position: relative;
     width: 100%;
-    height: 10rem;
+}
+
+.work-detail-image-container:before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.work-detail-image {
     border-radius: 4px 4px 0 0;
     background-color: green;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .work-detail-text-paragraph {
