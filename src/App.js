@@ -26,6 +26,15 @@ const App = () => {
 		name: "", languages: "", libraries: "", comment: <div/>
 	});
 
+	let adjustedWorks = [];
+	for (let i = 0; i < works.length; i += 3) {
+		let temp = [];
+		for (let j = i; (j < i + 3) && (j < works.length); j++) {
+			temp.push (works[j]);
+		}
+		adjustedWorks.push (temp);
+	}
+
 	return (
 		<div>
 			<div className={"space"}>
@@ -192,206 +201,32 @@ const App = () => {
 			<div className={"space"} id={"works"} style={{backgroundColor: "#f7e5ff"}}>
 				<Container className={"container"}>
 					<h2 className={"subtitle"}><img src={Works} alt={"Works"} className={"icon"}/>Works</h2>
-					<h4>研究・ICT特定プログラム</h4>
-					<Row>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["researches"][0]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<div className={"work-image"}></div>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["researches"][0].name}</h5>
-									<div>{works["researches"][0].languages}</div>
-									<div>{works["researches"][0].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["researches"][1]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<div className={"work-image"}></div>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["researches"][1].name}</h5>
-									<div>{works["researches"][1].languages}</div>
-									<div>{works["researches"][1].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["researches"][2]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<img src={works["researches"][2].image} className={"work-image"}
-										 alt={works["researches"][2].name}/>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["researches"][2].name}</h5>
-									<div>{works["researches"][2].languages}</div>
-									<div>{works["researches"][2].libraries}</div>
-								</div>
-							</div>
-						</Col>
-					</Row>
-
-					<h4>衛星プロジェクト</h4>
-					<Row>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["project"][0]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<img src={works["project"][0].image} className={"work-image"}
-										 alt={works["project"][0].name}/>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["project"][0].name}</h5>
-									<div>{works["project"][0].languages}</div>
-									<div>{works["project"][0].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["project"][1]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<img src={works["project"][1].image} className={"work-image"}
-										 alt={works["project"][1].name}/>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["project"][1].name}</h5>
-									<div>{works["project"][1].languages}</div>
-									<div>{works["project"][1].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["project"][2]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<img src={works["project"][2].image} className={"work-image"}
-										 alt={works["project"][2].name}/>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["project"][2].name}</h5>
-									<div>{works["project"][2].languages}</div>
-									<div>{works["project"][2].libraries}</div>
-								</div>
-							</div>
-						</Col>
-					</Row>
-
-					<h4>個人開発</h4>
-					<Row>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["private"][0]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<img src={works["private"][0].image} className={"work-image"}
-										 alt={works["private"][0].name}/>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["private"][0].name}</h5>
-									<div>{works["private"][0].languages}</div>
-									<div>{works["private"][0].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["private"][1]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<div className={"work-image"}></div>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["private"][1].name}</h5>
-									<div>{works["private"][1].languages}</div>
-									<div>{works["private"][1].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["private"][2]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<div className={"work-image"}></div>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["private"][2].name}</h5>
-									<div>{works["private"][2].languages}</div>
-									<div>{works["private"][2].libraries}</div>
-								</div>
-							</div>
-						</Col>
-					</Row>
-					<Row>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["private"][3]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<div className={"work-image"}></div>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["private"][3].name}</h5>
-									<div>{works["private"][3].languages}</div>
-									<div>{works["private"][3].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["private"][4]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<img src={works["private"][4].image} className={"work-image"}
-										 alt={works["private"][4].name}/>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["private"][4].name}</h5>
-									<div>{works["private"][4].languages}</div>
-									<div>{works["private"][4].libraries}</div>
-								</div>
-							</div>
-						</Col>
-						<Col sm={4} style={{marginBottom: "2rem"}}>
-							<div className={"work-panel"} onClick={() => {
-								setSelectedWork (works["private"][5]);
-								setIsWorkDetailVisible (true);
-							}}>
-								<div className={"work-image-container"}>
-									<img src={works["private"][5].image} className={"work-image"}
-										 alt={works["private"][5].name}/>
-								</div>
-								<div className={"work-title"}>
-									<h5>{works["private"][5].name}</h5>
-									<div>{works["private"][5].languages}</div>
-									<div>{works["private"][5].libraries}</div>
-								</div>
-							</div>
-						</Col>
-					</Row>
+					{adjustedWorks.map ((adjustedWork, i) => {
+						return (
+							<Row key={i}>
+								{adjustedWork.map ((work, j) => {
+									return (
+										<Col sm={4} style={{marginBottom: "2rem"}} key={j}>
+											<div className={"work-panel"} onClick={() => {
+												setSelectedWork (work);
+												setIsWorkDetailVisible (true);
+											}}>
+												<div className={"work-image-container"}>
+													<img src={work.image} className={"work-image"}
+														 alt={work.name}/>
+												</div>
+												<div className={"work-title"}>
+													<h5>{work.name}</h5>
+													<div>{work.languages}</div>
+													<div>{work.libraries}</div>
+												</div>
+											</div>
+										</Col>
+									);
+								})}
+							</Row>
+						);
+					})}
 				</Container>
 			</div>
 
