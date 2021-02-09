@@ -1,3 +1,13 @@
+import CodeBattler from "./img/works/CodeBattler.jpg";
+import VirtualSat from "./img/works/VirtualSat.jpg";
+import VirtualSatDetail from "./img/works/VirtualSat_detail.jpg";
+import USAT from "./img/works/U-SAT.jpg";
+import TSPHP from "./img/works/TSPHP.jpg";
+import TRINEEditor from "./img/works/TRINEEditor.jpg";
+
+import Poll from "./img/works/Pole.jpg";
+import SolidBall from "./img/works/SOLID BALL.jpg";
+
 export const works = {
 	"researches": [
 		{
@@ -16,12 +26,14 @@ export const works = {
 			name: "Code Battler",
 			languages: "HTML5/CSS3/JavaScript ES6",
 			libraries: "three.js/Blockly",
+			image: CodeBattler,
+			detailImage: CodeBattler,
 			comment:
 				<div>
 					<div>
 						ブロックを組み合わせて命令を作成するビジュアルプログラミング環境でロボットのプログラムを作成し、
 						ロボットをゴールへ導く、敵を倒すといった目標を達成していくプログラミング学習ツールです。
-						Webアプリとしてブラウザ上で動作し、ロボットの動作は3Dグラフィックスで描画されます。
+						Webアプリとしてブラウザ上で動作し、ロボットの動きは3Dグラフィックスで描画されます。
 						また、2人のプレイヤーがそれぞれ同じ画面上でロボットのプログラムを作成し、対戦させるモードも搭載しています。
 					</div>
 					<div>
@@ -35,6 +47,8 @@ export const works = {
 			name: "Virtual Sat",
 			languages: "PICマイコン/C言語",
 			libraries: "Unity/C#",
+			image:  VirtualSat,
+			detailImage: VirtualSatDetail,
 			comment:
 				<div>
 					<div>
@@ -54,6 +68,8 @@ export const works = {
 			name: "U-SAT/U-Connect",
 			languages: "Raspberry Pi/Python",
 			libraries: "Unity/C#",
+			image:  USAT,
+			detailImage: USAT,
 			comment:
 				<div>
 					<div>
@@ -80,10 +96,12 @@ export const works = {
 			name: "公式Webサイト",
 			languages: "HTML5/CSS3",
 			libraries: "bootstrap",
+			image:  TSPHP,
+			detailImage: TSPHP,
 			comment:
 				<div>
 					衛星プロジェクトの公式Webサイトです。
-					普段Web技術を扱うことがない団体であるため、引き継ぎ時を考え極力HTMLとCSSのみで作成するようにしました。
+					普段Web技術を扱うことがない団体であるため、引き継ぎ時を考え極力HTMLとCSSのみで保守/管理できるようにしました。
 					レスポンシブデザインに対応するためbootstrapを使用しています。
 				</div>,
 		},
@@ -93,10 +111,12 @@ export const works = {
 			name: "TRINE Editor",
 			languages: "C#/Windows Forms",
 			libraries: "DXライブラリ",
+			image:  TRINEEditor,
+			detailImage: TRINEEditor,
 			comment:
 				<div>
 					プログラミング未経験でも簡単な3Dゲームを製作することが可能なWindowsデスクトップアプリです。
-					ゲームのロジックはGUIで作成でき、未経験者にはハードルが高いテキスト言語を一切記述することなくゲームの開発が可能です。
+					ゲームのロジックはGUIで作成でき、プログラミング未経験者にはハードルの高いテキスト言語を一切記述することなく3Dゲームの開発が可能です。
 				</div>,
 		},
 		{
@@ -108,7 +128,7 @@ export const works = {
 					「TRINE Editor」の発展版です。テキスト言語を一切記述せずに3Dゲームが開発できるというコンセプトはそのままに、
 					より直感的にロジックを組み立てることができるブロック型のビジュアルプログラミング環境を取り入れた3Dゲーム製作ツールとして開発中です。
 					またWeb技術でデスクトップアプリを開発できるElectronを使用しているため、前作と違いマルチプラットフォーム展開が可能であり、
-					将来的には学校などソフトウェアのダウンロード・インストールが制限された環境でも使用できるWebアプリとして公開することも検討しています。
+					将来的には学校などソフトウェアのダウンロード・インストールが制限された環境でも使用できるようWebアプリとして公開することも検討しています。
 				</div>,
 		},
 		{
@@ -127,6 +147,8 @@ export const works = {
 			name: "Poll",
 			languages: "nim",
 			libraries: "",
+			image:  Poll,
+			detailImage: Poll,
 			comment:
 				<div>
 					<div>
@@ -149,9 +171,11 @@ export const works = {
 				</div>,
 		},
 		{
-			name: "Space Ball",
+			name: "SOLID BALL",
 			languages: "Unity/C#",
 			libraries: "",
+			image:  SolidBall,
+			detailImage: SolidBall,
 			comment:
 				<div>
 					高校生の頃製作したUnity製ゲームです。「宇宙空間での球技」をテーマとして作成しました。

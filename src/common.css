@@ -16,10 +16,6 @@ ul li {
     align-items: center;
 }
 
-.inner-div {
-    width: 100%;
-}
-
 .title {
     text-align: center;
     width: 100%;
@@ -77,6 +73,7 @@ p {
 .container {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
     max-width: 1500px;
 }
 
@@ -100,21 +97,11 @@ p {
 }
 
 .work-image-container {
-    position: relative;
     width: 100%;
 }
 
-.work-image-container:before {
-    content: "";
-    display: block;
-    padding-top: 56.25%;
-}
-
 .work-image {
-    border-radius: 4px 4px 0 0;
-    background-color: green;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    width: 100%;
 }
 
 .work-title {
