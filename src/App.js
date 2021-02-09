@@ -274,8 +274,9 @@ const WorkDetail = (props) => {
 				×
 			</div>
 			<div className={"work-detail-contents"}>
-				<div className={"work-detail-image-container"}>
-					<div className={"work-detail-image"}></div>
+				<div className={"work-image-container"}>
+					<img src={props.work.detailImage} className={"work-image"}
+						 alt={props.work.name}/>
 				</div>
 				<div className={"work-detail-text"}>
 					<h4>{props.work.name}</h4>
@@ -286,7 +287,7 @@ const WorkDetail = (props) => {
 					</div>
 					<div className={"work-detail-text-paragraph"}>
 						<h5>解説</h5>
-						{props.work.comment}
+						<div style={{textAlign: "left"}}>{props.work.comment}</div>
 					</div>
 				</div>
 			</div>

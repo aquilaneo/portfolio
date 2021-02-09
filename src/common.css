@@ -153,24 +153,6 @@ p {
     text-align: center;
 }
 
-.work-detail-image-container {
-    position: relative;
-    width: 100%;
-}
-
-.work-detail-image-container:before {
-    content: "";
-    display: block;
-    padding-top: 56.25%;
-}
-
-.work-detail-image {
-    border-radius: 4px 4px 0 0;
-    background-color: green;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-}
-
 .work-detail-text-paragraph {
     margin-top: 1rem;
 }
