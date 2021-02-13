@@ -1,32 +1,32 @@
 import CodeBattler from "./img/works/CodeBattler.jpg";
-import VirtualSat from "./img/works/VirtualSat.jpg";
-import VirtualSatDetail from "./img/works/VirtualSat_detail.jpg";
+import CodeBattlerDetail from "./img/works/CodeBattler_detail.jpg";
+import VirtualLander from "./img/works/VirtualLander.jpg";
+import VirtualLanderDetail from "./img/works/VirtualLander_detail.jpg";
 import USAT from "./img/works/U-SAT.jpg";
+import USATDetail from "./img/works/U-SAT_detail.jpg";
 import TSPHP from "./img/works/TSPHP.jpg";
+import TSPHPDetail from "./img/works/TSPHP_detail.jpg";
+import Questions from "./img/works/Questions.jpg";
 import TRINEEditor from "./img/works/TRINEEditor.jpg";
+import TRINEEditorDetail from "./img/works/TRINEEditor_detail.jpg";
 
 import Tetris from "./img/works/Tetris.jpg";
 
 import Poll from "./img/works/Pole.jpg";
 import SolidBall from "./img/works/SOLID BALL.jpg";
+import SolidBallDetail from "./img/works/SOLID BALL_detail.jpg";
 
 export const works = [
-	{
-		name: "火星溶岩チューブの探索",
-		languages: "Python",
-		libraries: "",
-		comment: <div>あああ</div>,
-	},
 	{
 		name: "Code Battler",
 		languages: "HTML5/CSS3/JavaScript ES6",
 		libraries: "three.js/Blockly",
 		image: CodeBattler,
-		detailImage: CodeBattler,
+		detailImage: CodeBattlerDetail,
 		comment:
 			<div>
 				<div>
-					ブロックを組み合わせて命令を作成するビジュアルプログラミング環境でロボットのプログラムを作成し、
+					ブロックを組み合わせて命令を作成するビジュアルプログラミング環境やJavaScriptでロボットのプログラムを作成し、
 					ロボットをゴールへ導く、敵を倒すといった目標を達成していくプログラミング学習ツールです。
 					Webアプリとしてブラウザ上で動作し、ロボットの動きは3Dグラフィックスで描画されます。
 					また、2人のプレイヤーがそれぞれ同じ画面上でロボットのプログラムを作成し、対戦させるモードも搭載しています。
@@ -34,14 +34,19 @@ export const works = [
 				<div>
 					ICT特定プログラムの卒業制作として開発した作品で、2019年度ICT特定プログラム最優秀賞を獲得しました。
 				</div>
+				<div className={"center"}>
+					<a href={"https://github.com/aquilaneo/Code-Battler"} target={"_blank"} rel={"noopener noreferrer"}>
+						GitHub
+					</a>
+				</div>
 			</div>,
 	},
 	{
-		name: "Virtual Sat",
+		name: "Virtual Lander",
 		languages: "PICマイコン/C言語",
 		libraries: "Unity/C#",
-		image: VirtualSat,
-		detailImage: VirtualSatDetail,
+		image: VirtualLander,
+		detailImage: VirtualLanderDetail,
 		comment:
 			<div>
 				<div>
@@ -55,6 +60,12 @@ export const works = [
 				<div>
 					なお、現在公開しているものは専用コントローラーではなくマウス操作で着陸機を操作できるようにしたバージョンです。
 				</div>
+				<div className={"center"}>
+					<a href={"https://drive.google.com/file/d/1BdlwzUxsfR8UB_R96mSNjijKCuBJk2OZ/view?usp=sharing"}
+					   target={"_blank"} rel={"noopener noreferrer"}>
+						ダウンロードページ
+					</a>
+				</div>
 			</div>,
 	},
 	{
@@ -62,7 +73,7 @@ export const works = [
 		languages: "Raspberry Pi/Python",
 		libraries: "Unity/C#",
 		image: USAT,
-		detailImage: USAT,
+		detailImage: USATDetail,
 		comment:
 			<div>
 				<div>
@@ -83,6 +94,11 @@ export const works = [
 					このプロジェクトは当時の学部2年生3名で開発を行い、私が模擬衛星の制御ソフトウェア及び管制ソフトウェアの開発、
 					他2名がそれぞれ模擬衛星の構体/無線通信コンポーネントの開発、模擬衛星の電装系開発を担当しました。
 				</div>
+				<div className={"center"}>
+					<a href={"http://www.ea.u-tokai.ac.jp/tsp/usat.html"} target={"_blank"} rel={"noopener noreferrer"}>
+						U-SAT/U-Connect紹介ページ
+					</a>
+				</div>
 			</div>,
 	},
 	{
@@ -90,12 +106,38 @@ export const works = [
 		languages: "HTML5/CSS3",
 		libraries: "bootstrap",
 		image: TSPHP,
-		detailImage: TSPHP,
+		detailImage: TSPHPDetail,
 		comment:
 			<div>
-				衛星プロジェクトの公式Webサイトです。
-				普段Web技術を扱うことがない団体であるため、引き継ぎ時を考え極力HTMLとCSSのみで保守/管理できるようにしました。
-				レスポンシブデザインに対応するためbootstrapを使用しています。
+				<div>
+					衛星プロジェクトの公式Webサイトです。
+					普段Web技術を扱うことがない団体であるため、引き継ぎ時を考え極力HTMLとCSSのみで保守/管理できるようにしました。
+					レスポンシブデザインに対応するためbootstrapを使用しています。
+				</div>
+				<div className={"center"}>
+					<a href={"http://www.ea.u-tokai.ac.jp/tsp/"} target={"_blank"} rel={"noopener noreferrer"}>
+						衛星プロジェクト公式サイト
+					</a>
+				</div>
+			</div>,
+	},
+	{
+		name: "建学祭来場者アンケートアプリ",
+		languages: "Kotlin",
+		libraries: "",
+		image: Questions,
+		detailImage: Questions,
+		comment:
+			<div>
+				<div>
+					2019年度東海大学建学祭に衛星プロジェクトで出展した際の来場者アンケート用Androidアプリです。
+					これまでは紙のアンケートを使用していましたが、毎年数百枚もの来場者アンケートを集計するのが困難になっていたため、
+					このAndroidタブレットを使用したアンケートに変更しました。
+				</div>
+				<div>
+					出展会場はWi-Fi環境が不安定であることがわかっていたため、回答は各端末に保存され、あとで集計できるようになっています。
+					また普段タブレット端末に触れることが少ない年齢層の方にも配慮し、記述式の質問は設けず全て選択式としています。
+				</div>
 			</div>,
 	},
 	{
@@ -103,15 +145,23 @@ export const works = [
 		languages: "C#/Windows Forms",
 		libraries: "DXライブラリ",
 		image: TRINEEditor,
-		detailImage: TRINEEditor,
+		detailImage: TRINEEditorDetail,
 		comment:
 			<div>
-				プログラミング未経験でも簡単な3Dゲームを製作することが可能なWindowsデスクトップアプリです。
-				ゲームのロジックはGUIで作成でき、プログラミング未経験者にはハードルの高いテキスト言語を一切記述することなく3Dゲームの開発が可能です。
+				<div>
+					プログラミング未経験でも簡単な3Dゲームを製作することが可能なWindowsデスクトップアプリです。
+					ゲームのロジックはGUIで作成でき、プログラミング未経験者にはハードルの高いテキスト言語を一切記述することなく3Dゲームの開発が可能です。
+				</div>
+				<div className={"center"}>
+					<a href={"https://drive.google.com/drive/folders/0Bx5cVUH2TWk6RDhpRHhFd2hrckE"} target="_blank"
+					   rel="noopener noreferrer">
+						ダウンロードページ
+					</a>
+				</div>
 			</div>,
 	},
 	{
-		name: "TRINE 3D",
+		name: "TRINE 3D(開発中)",
 		languages: "HTML5/CSS3/TypeScript",
 		libraries: "Vue.js/three.js/Blockly/Electron",
 		comment:
@@ -120,6 +170,7 @@ export const works = [
 				より直感的にロジックを組み立てることができるブロック型のビジュアルプログラミング環境を取り入れた3Dゲーム製作ツールとして開発中です。
 				またWeb技術でデスクトップアプリを開発できるElectronを使用しているため、前作と違いマルチプラットフォーム展開が可能であり、
 				将来的には学校などソフトウェアのダウンロード・インストールが制限された環境でも使用できるようWebアプリとして公開することも検討しています。
+				現在はReactを使用したバージョンを開発中です。
 			</div>,
 	},
 	{
@@ -128,7 +179,15 @@ export const works = [
 		libraries: "",
 		image: Tetris,
 		detailImage: Tetris,
-		comment: <div>C++の勉強用に作成したテトリスです。C++/CLIとWindows Formsで開発しました。</div>,
+		comment:
+			<div>
+				<div>C++の勉強用に作成したテトリスです。C++/CLIとWindows Formsで開発しました。</div>
+				<div className={"center"}>
+					<a href={"https://github.com/aquilaneo/Tetris"} target={"_blank"} rel={"noopener noreferrer"}>
+						GitHub
+					</a>
+				</div>
+			</div>,
 	},
 	{
 		name: "ポートフォリオ",
@@ -148,18 +207,10 @@ export const works = [
 					「I」「l」「1」の3文字からなる6命令を使い、それ以外の文字はコメントとして扱われるBrainf*ck系のネタプログラミング言語です。
 					もともとは衛星プロジェクト内のLightning Talk(LT)のネタになるかと思い、当時興味のあったnim言語で実装してみたものです。
 				</div>
-				<div>
-					「Hello World」と表示するソースコード例↓
-				</div>
-				<div style={{border: "solid thin black"}}>
-					I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1<br/>
-					I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1<br/>
-					I1I1I1I1I1I1I1I1llI1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1<br/>
-					I1I1I1I1I1I1llI1I1I1I1I1I1I1llllI1I1I1llIII1I1I1I1I1I1I1I1I1I1I1<br/>
-					I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1llI1I1I1I1I1I1I1I1I1I1<br/>
-					I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1<br/>
-					I1I1I1I1I1I1I1I1I1I1I1I1I1llI1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1I1<br/>
-					I1I1I1I1I1I1llI1I1I1lllIlIlIlIlIlIlllIlIlIlIlIlIlIlIll
+				<div className={"center"}>
+					<a href={"https://github.com/aquilaneo/Pole"} target={"_blank"} rel={"noopener noreferrer"}>
+						GitHub
+					</a>
 				</div>
 			</div>,
 	},
@@ -168,11 +219,19 @@ export const works = [
 		languages: "Unity/C#",
 		libraries: "",
 		image: SolidBall,
-		detailImage: SolidBall,
+		detailImage: SolidBallDetail,
 		comment:
 			<div>
-				高校生の頃製作したUnity製ゲームです。「宇宙空間での球技」をテーマとして作成しました。
-				Unityインターハイ2015に出場し、特別出典として本選会場で展示を行いました。
+				<div>
+					高校生の頃製作したUnity製ゲームです。「宇宙空間での球技」をテーマとして作成しました。
+					Unityインターハイ2015に出場し、特別出典として本選会場で展示を行いました。
+				</div>
+				<div className={"center"}>
+					<a href={"https://drive.google.com/file/d/1AM67PX0Y4v4GrkBXNMmcqnci6uoOIjC-/view?usp=sharing"}
+					   target={"_blank"} rel={"noopener noreferrer"}>
+						ダウンロードページ
+					</a>
+				</div>
 			</div>,
 	}
 ]
