@@ -9,9 +9,10 @@ import TSPHPDetail from "./img/works/TSPHP_detail.jpg";
 import Questions from "./img/works/Questions.jpg";
 import TRINEEditor from "./img/works/TRINEEditor.jpg";
 import TRINEEditorDetail from "./img/works/TRINEEditor_detail.jpg";
-
+import TRINE3D from "./img/works/TRINE3D.jpg";
+import TRINE3DDetail from "./img/works/TRINE3D_detail.jpg";
+import Portfolio from "./img/works/Portfolio.jpg";
 import Tetris from "./img/works/Tetris.jpg";
-
 import Poll from "./img/works/Pole.jpg";
 import SolidBall from "./img/works/SOLID BALL.jpg";
 import SolidBallDetail from "./img/works/SOLID BALL_detail.jpg";
@@ -33,6 +34,12 @@ export const works = [
 				</div>
 				<div>
 					ICT特定プログラムの卒業制作として開発した作品で、2019年度ICT特定プログラム最優秀賞を獲得しました。
+				</div>
+				<div className={"center"}>
+					<a href={"https://aquilaneo.github.io/Code-Battler/tutorial1.html"}
+					   target={"_blank"} rel={"noopener noreferrer"}>
+						公開ページ
+					</a>
 				</div>
 				<div className={"center"}>
 					<a href={"https://github.com/aquilaneo/Code-Battler"} target={"_blank"} rel={"noopener noreferrer"}>
@@ -164,6 +171,8 @@ export const works = [
 		name: "TRINE 3D(開発中)",
 		languages: "HTML5/CSS3/TypeScript",
 		libraries: "Vue.js/three.js/Blockly/Electron",
+		image: TRINE3D,
+		detailImage: TRINE3DDetail,
 		comment:
 			<div>
 				「TRINE Editor」の発展版です。テキスト言語を一切記述せずに3Dゲームが開発できるというコンセプトはそのままに、
@@ -193,6 +202,8 @@ export const works = [
 		name: "ポートフォリオ",
 		languages: "HTML5/CSS3/JavaScript ES6",
 		libraries: "React/bootstrap",
+		image: Portfolio,
+		detailImage: Portfolio,
 		comment: <div>このポートフォリオサイトです。自己紹介やこれまでの活動、よく使用する技術、製作した作品を掲載しています。</div>,
 	},
 	{
