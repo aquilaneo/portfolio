@@ -204,7 +204,15 @@ export const works = [
 		libraries: "React/bootstrap",
 		image: Portfolio,
 		detailImage: Portfolio,
-		comment: <div>このポートフォリオサイトです。自己紹介やこれまでの活動、よく使用する技術、製作した作品を掲載しています。</div>,
+		comment:
+			<div>
+				<div>このポートフォリオサイトです。自己紹介やこれまでの活動、よく使用する技術、製作した作品を掲載しています。</div>
+				<div className={"center"}>
+					<a href={"https://github.com/aquilaneo/portfolio"} target={"_blank"} rel={"noopener noreferrer"}>
+						GitHub
+					</a>
+				</div>
+			</div>,
 	},
 	{
 		name: "Poll",

@@ -289,7 +289,7 @@ const WorkDetail = (props) => {
 				<div className={"work-detail-text"}>
 					<h4 className={"subtitle"}>{props.work.name}</h4>
 					<div className={"work-detail-text-paragraph"}>
-						<h5>使用技術</h5>
+						<h5>主な使用技術</h5>
 						<div>{props.work.languages}</div>
 						<div>{props.work.libraries}</div>
 					</div>
