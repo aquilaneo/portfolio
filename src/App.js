@@ -275,13 +275,13 @@ const App = () => {
 
 const WorkDetail = (props) => {
 	return (
-		<div className={"work-detail-panel"} style={{display: props.visible ? "block" : "none"}}>
-			<div className={"close-button"} onClick={() => {
-				props.closeFunc ();
+		<div className={"work-detail-panel"} style={{display: props.visible ? "block" : "none"}} onClick={() => {
+			props.closeFunc ();
+		}}>
+			<div className={"close-button"}>×</div>
+			<div className={"work-detail-contents"} onClick={(event) => {
+				event.stopPropagation ();
 			}}>
-				×
-			</div>
-			<div className={"work-detail-contents"}>
 				<div className={"work-image-container"}>
 					<img src={props.work.detailImage} className={"work-image"}
 						 alt={props.work.name}/>
