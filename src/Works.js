@@ -13,7 +13,7 @@ import TRINE3D from "./img/works/TRINE3D.jpg";
 import TRINE3DDetail from "./img/works/TRINE3D_detail.jpg";
 import Portfolio from "./img/works/Portfolio.jpg";
 import Tetris from "./img/works/Tetris.jpg";
-import Poll from "./img/works/Pole.jpg";
+import Pole from "./img/works/Pole.jpg";
 import SolidBall from "./img/works/SOLID BALL.jpg";
 import SolidBallDetail from "./img/works/SOLID BALL_detail.jpg";
 
@@ -215,16 +215,16 @@ export const works = [
 			</div>,
 	},
 	{
-		name: "Poll",
-		languages: "nim",
+		name: "Pole",
+		languages: "C++/Nim",
 		libraries: "",
-		image: Poll,
-		detailImage: Poll,
+		image: Pole,
+		detailImage: Pole,
 		comment:
 			<div>
 				<div>
 					「I」「l」「1」の3文字からなる6命令を使い、それ以外の文字はコメントとして扱われるBrainf*ck系のネタプログラミング言語です。
-					もともとは衛星プロジェクト内のLightning Talk(LT)のネタになるかと思い、当時興味のあったnim言語で実装してみたものです。
+					もともとは衛星プロジェクト内のLightning Talk(LT)のネタになるかと思い、C++や当時興味のあったNim言語で実装してみたものです。
 				</div>
 				<div className={"center"}>
 					<a href={"https://github.com/aquilaneo/Pole"} target={"_blank"} rel={"noopener noreferrer"}>
